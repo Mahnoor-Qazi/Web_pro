@@ -1,0 +1,66 @@
+.card {
+    width: 300px;
+    height : 400px;
+    position: relative;
+    text-decoration: none;
+
+    .image {
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        &:hover {
+            .secondImg {
+                z-index: 2;
+            }
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            cursor: pointer;
+        }
+
+        .mainImg {
+            z-index: 1;
+        }
+
+        
+    }
+
+    .description {
+        color: #575555;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        .prices {
+            display: flex;
+            gap: 12px;
+            margin-top: 0;
+
+            .old {
+                text-decoration: line-through;
+            }
+
+            .new {
+                color :#444343
+            }
+        }
+    }
+
+    .newItem {
+        border: 1px solid #575555;
+        background-color: rgb(162, 214, 162);
+        color: #575555;
+        padding: 0.2rem 0.5rem;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+    }
+}

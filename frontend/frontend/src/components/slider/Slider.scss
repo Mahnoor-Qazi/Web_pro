@@ -1,0 +1,45 @@
+body {
+    overflow-x: hidden;
+}
+
+.slider{
+    width : 100vw;
+    height: 1000px;
+    overflow: hidden;
+    position: relative;
+
+    .wrapper {
+        width: 300vw;
+        display: flex;
+        position: absolute;
+        transition: all 1s ease;
+
+        .slide {
+            width: 100vw;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .arrows {
+        position : absolute;
+        color : white;
+        top : 80%;
+        left : 47%;
+        display: flex;
+        gap: 2px;
+        
+        .arrow {
+            background-color: rgb(87, 85, 85);
+            width: 2rem;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+        }
+
+    }
+}

@@ -1,0 +1,60 @@
+.info {    
+        .form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+    
+    
+            .header {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+        
+                .close {
+                cursor: pointer;
+            }
+        }
+    
+            .input {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+    
+                input {
+                    width: calc(100% - 20px);
+                    border: 2px solid gray;
+                    height: 1rem;
+                    outline: none;
+                    line-height: 0.7rem;
+                    font-size: 14px;
+                    padding: 4px;
+                }
+            }
+    
+            .action {
+                width: 100%;
+    
+                button {
+                    margin-top: 10px;
+                    width: 100%;
+                    color: white;
+                    background-color: black;
+                    font-weight: bold;
+                    cursor: pointer;
+                    padding: 0.5rem 1rem;
+                }
+    
+                p {
+                    color: green;
+                }
+            }
+        }
+    }
+    // }
